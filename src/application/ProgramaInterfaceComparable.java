@@ -25,6 +25,7 @@ public class ProgramaInterfaceComparable {
 				String[] campos = funcionarioCsv.split(",");
 				list.add(new Funcionario(campos[0], Double.parseDouble(campos[1])));
 				funcionarioCsv = br.readLine();
+				
 			}
 			Collections.sort(list);
 			for(Funcionario emp: list) {
